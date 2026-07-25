@@ -1,7 +1,30 @@
 aid: congruent
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/congruent.png
 name: Congruent
-description: Congruent is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Congruent builds AI-native radar hardware and simulation tooling for
+  self-driving cars and end-to-end autonomy. The company pairs a radar
+  architecture that exposes raw sensor data with a world-model-based generative
+  simulator, producing both real and synthetic raw radar returns to train
+  autonomy stacks. Radar is the only depth sensor cheap enough to scale to every
+  vehicle while still working in rain, fog, snow, and dust, where camera and
+  lidar systems degrade. Congruent is an early-stage Y Combinator (W26) company
+  founded in 2025 by Clement Barthes and Evan Scope Crafts, based in the San
+  Francisco Bay Area. It was surfaced as a Y Combinator portfolio company and
+  added to the API Evangelist network for enrichment; as of this profile the
+  company operates a single marketing website and publishes no public API,
+  developer portal, SDK, or specification.
 url: https://raw.githubusercontent.com/api-evangelist/congruent/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +34,35 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Radar
+- Autonomous Vehicles
+- Self-Driving Cars
+- Sensors
+- Simulation
+- Robotics
+- Hardware
+- Y Combinator
+- Automotive
 apis: []
+common:
+- type: DomainSecurity
+  url: security/congruent-domain-security.yml
+- type: Website
+  url: https://congruent.io
+- type: Company
+  url: https://www.ycombinator.com/companies/congruent
+- type: LinkedIn
+  url: https://www.linkedin.com/company/congruent-sensing
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
